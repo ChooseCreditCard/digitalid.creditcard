@@ -214,8 +214,8 @@ body {
   padding: 0.6rem 1.3rem;
   border-radius: var(--cc-radius-md);
   background: var(--cc-accent);
-  color: #020617;
-  text-decoration: none;
+  color: #020617;              /* mørk tekst for god kontrast */
+  text-decoration: none;       /* ingen underline på knappen */
   box-shadow: 0 16px 35px rgba(8, 47, 73, 0.75);
   transition: background-color 160ms ease, transform 160ms ease,
     box-shadow 160ms ease;
@@ -252,13 +252,14 @@ body {
   margin: 0 0 0.75rem;
 }
 
-.cc-page a {
+/* Vanlige lenker inne på siden (ikke CTA-knappen) */
+.cc-page a:not(.cta) {
   color: var(--cc-accent-soft);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.cc-page a:hover {
+.cc-page a:not(.cta):hover {
   color: #e0f2fe;
 }
 
