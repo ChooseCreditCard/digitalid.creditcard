@@ -214,7 +214,7 @@ body {
   padding: 0.6rem 1.3rem;
   border-radius: var(--cc-radius-md);
   background: var(--cc-accent);
-  color: #020617;              /* mørk tekst for god kontrast */
+  color: #020617;              /* tydelig tekst på lys blå bakgrunn */
   text-decoration: none;       /* ingen underline på knappen */
   box-shadow: 0 16px 35px rgba(8, 47, 73, 0.75);
   transition: background-color 160ms ease, transform 160ms ease,
@@ -359,7 +359,7 @@ body {
 }
 
 /* ==========================================================================
-   Footer – same gradient & structure as Fin.Creditcard
+   Full footer (for større sider som fin.creditcard – kan gjenbrukes)
    ========================================================================== */
 
 .site-footer {
@@ -449,4 +449,39 @@ body {
   margin: 0;
   font-size: 0.8rem;
   color: var(--cc-text-subtle);
+}
+
+/* ==========================================================================
+   Mini Footer – for small cluster/utility pages
+   ========================================================================== */
+
+.mini-footer {
+  margin-top: 3rem;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(148, 163, 184, 0.35);
+  background: radial-gradient(circle at top, #0d1330 0, #060818 50%, #020617 100%);
+}
+
+.mini-footer-main {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--cc-text-soft);
+}
+
+.mini-footer-contact {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--cc-text-soft);
+}
+
+.mini-footer-contact a {
+  color: #7dd3fc;              /* lys, tydelig e-postfarge */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mini-footer-contact a:hover {
+  text-decoration: underline;
+  color: #c8f1ff;               /* enda lysere på hover */
 }
