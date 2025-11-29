@@ -4,201 +4,241 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>DigitalID.Creditcard – Digital Identity, KYC & Strong Authentication</title>
-  <meta name="description"
-        content="DigitalID.creditcard explains digital identity for cardholders: KYC, eID, device binding, biometrics, SCA and how identity flows power modern card programs." />
+  <title>DigitalID.Creditcard – Digital Identity & Cardholder Verification Explained</title>
+  <meta name="description" content="Understand how digital identity, eID and verification flows connect to credit cards. Learn how banks verify cardholders, secure access and meet KYC and SCA requirements." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://digitalid.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="DigitalID.Creditcard – Digital Identity for Cardholders" />
-  <meta property="og:description"
-        content="Learn how digital identity, KYC and strong authentication work behind modern credit cards." />
+  <meta property="og:title" content="DigitalID.Creditcard – Digital Identity & Cardholder Verification Explained" />
+  <meta property="og:description" content="Learn how digital identity, strong customer authentication and cardholder verification work together in modern credit card systems." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://digitalid.creditcard/" />
-  <meta property="og:image" content="https://digitalid.creditcard/preview.png" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="/styles.css" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DigitalID.Creditcard – Digital Identity & Cardholder Verification Explained" />
+  <meta name="twitter:description" content="Independent explanation of how digital identity, eID, KYC and SCA protect credit cards and online payments." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config','G-64FE63JQ3H');
+    gtag('config', 'G-64FE63JQ3H');
   </script>
-</head>
 
+  <!-- Tailwind for utility classes -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Your shared minisite styles -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 <body class="bg-slate-950 text-slate-100">
-  <!-- HEADER -->
   <header class="site-header">
     <div class="nav-inner max-w-6xl">
       <div class="brand">
         <div class="cc-logo">CC</div>
         <div class="brand-text">
-          <span class="brand-title">DigitalID.creditcard</span>
-          <span class="brand-subtitle">Identity &amp; access · The CreditCard Collection</span>
+          <div class="brand-title">DigitalID.Creditcard</div>
+          <div class="brand-subtitle">Digital Identity & Cardholder Verification</div>
         </div>
       </div>
-      <nav class="nav-links">
-        <a href="https://fin.creditcard/?utm_source=digitalid.creditcard&utm_medium=nav&utm_campaign=collection">Collection</a>
-        <a href="https://access.creditcard/?utm_source=digitalid.creditcard&utm_medium=nav&utm_campaign=access">Access</a>
-        <a href="https://choose.creditcard/?utm_source=digitalid.creditcard&utm_medium=nav&utm_campaign=choose">Choose</a>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#overview">Overview</a>
+        <a href="#mechanics">How It Works</a>
+        <a href="#compare">Compare</a>
       </nav>
     </div>
   </header>
 
   <main class="cc-page">
-    <p class="cc-breadcrumb">DigitalID.creditcard · Identity · Access · Choose</p>
+    <!-- Breadcrumb -->
+    <div class="cc-breadcrumb">
+      <a href="https://choose.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
+      &nbsp;›&nbsp;
+      DigitalID.Creditcard
+    </div>
 
-    <!-- HERO -->
+    <!-- Hero -->
     <section class="hero">
-      <h1>Digital Identity for Cardholders</h1>
-      <p class="hero-lead">
-        How your identity is verified, linked and protected in modern card programs.
-      </p>
-      <a class="cta"
-         href="https://choose.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=digitalid_top">
-        Compare Secure &amp; Modern Cards
-      </a>
+      <div class="hero-content">
+        <h1>How Digital Identity Connects to Your Credit Card</h1>
+        <p class="hero-lead">
+          DigitalID.Creditcard explains how banks, issuers and wallets use digital identity to open accounts, verify cardholders and secure every tap, click and login — from KYC at onboarding to strong customer authentication at checkout.
+        </p>
+        <a class="cta" href="https://choose.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Explore card technology on Choose.Creditcard
+        </a>
+      </div>
     </section>
 
-    <!-- What is digital ID -->
-    <section class="section">
-      <h2>What is “digital ID” in cards?</h2>
-      <p class="small">
-        Digital identity is the combination of data, documents, devices and signals that lets a card issuer
-        know that you are really you – online, on mobile and at the point of sale.
+    <!-- Content sections -->
+    <section id="overview" class="section">
+      <h2>What Is Digital Identity in the Card World?</h2>
+      <p>
+        In the context of credit cards, digital identity is the collection of verified data and credentials that prove who you are when you apply for a card, log in to your account or approve a transaction. It can include government IDs, biometrics, device information and behavioural signals, all tied back to a single cardholder profile.
       </p>
-      <ul class="list">
-        <li>Verified personal data (name, address, date of birth)</li>
-        <li>Official ID documents and selfies</li>
-        <li>National eID or bank ID schemes</li>
-        <li>Linked devices and trusted browsers</li>
-        <li>Behaviour and usage history over time</li>
-      </ul>
+      <p>
+        Instead of relying only on plastic cards and signatures, modern issuers combine these digital identity elements to decide whether to open an account, adjust limits or allow a payment. The goal is to make access smoother for legitimate users while making it harder for stolen data or synthetic identities to slip through.
+      </p>
     </section>
 
-    <!-- KYC -->
-    <section class="section">
-      <h2>KYC: Knowing who gets the card</h2>
-      <p class="small">
-        “Know Your Customer” (KYC) checks are required before a card can be issued or limits increased:
+    <section id="mechanics" class="section">
+      <h2>How Digital ID Flows Through Onboarding and Payments</h2>
+      <p>
+        When you apply for a credit card online, the onboarding flow usually starts by collecting basic details and then cross-checking them against trusted sources. This may involve document scanning, video identification, national eID schemes or third-party verification services, all feeding into the issuer’s KYC and risk models.
       </p>
-      <ul class="list">
-        <li>Document capture (passport, ID card, driver’s license)</li>
-        <li>Liveness and selfie comparison</li>
-        <li>Sanctions and PEP screening</li>
-        <li>Address checks and bureau data</li>
-        <li>Risk-based additional questions or proofs</li>
-      </ul>
+      <p>
+        Once the card is active, the same digital identity signals are reused in daily life. Device recognition, biometric unlock on your banking app, one-time passwords and 3-D Secure challenges are all examples of digital identity in action. They create a bridge between “the person who was onboarded” and “the person using the card right now”.
+      </p>
     </section>
 
-    <!-- Strong authentication -->
     <section class="section">
-      <h2>Digital ID in Strong Customer Authentication (SCA)</h2>
+      <h2>Digital Identity in Everyday Card Use</h2>
+      <p>
+        At checkout, you may only see a short code or biometric prompt, but underneath that simple interaction is a decision about how strongly your identity needs to be confirmed. Low-risk, low-value transactions might be allowed with frictionless checks, while unusual or high-value purchases trigger step-up authentication using stronger factors.
+      </p>
+      <p>
+        The same applies to account maintenance. Changing contact details, adding new devices or requesting higher limits often requires a stronger identity check than simply viewing balances. Good digital ID design balances convenience and control, so most actions feel effortless while still protecting sensitive changes.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Security, Privacy and Data Minimisation</h2>
+      <p>
+        Strong digital identity systems are not just about collecting as much data as possible. They are built around minimising what is shared, limiting who can see it and logging how it is used. Tokenisation, pseudonymous identifiers and role-based access are examples of techniques that reduce the exposure of raw personal data.
+      </p>
+      <p>
+        For cardholders, this means your issuer should be able to recognise you reliably without broadcasting unnecessary information to merchants or third parties. Understanding which actors actually see your data — the bank, the network, the merchant or a wallet provider — is an important part of evaluating trust.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Regulation, Standards and Future Trends</h2>
+      <p>
+        Regulatory frameworks such as KYC, AML and strong customer authentication set minimum expectations for how identity is checked and monitored. On top of that, industry standards and public digital ID schemes aim to make verification more consistent across borders, while still allowing national rules and risk appetites to differ.
+      </p>
+      <p>
+        Looking ahead, reusable digital ID wallets, passkeys and stronger device-bound credentials are likely to become more common in card flows. For cardholders, the key questions will remain the same: who is vouching for your identity, how is it protected, and what happens when something goes wrong or needs to be updated.
+      </p>
+    </section>
+
+    <!-- Comparison block -->
+    <section id="compare" class="section">
+      <h2>Comparing Digital Identity Approaches in Card Programs</h2>
       <div class="table-wrap">
         <table class="table">
           <thead>
-          <tr>
-            <th>Factor type</th>
-            <th>Example in card world</th>
-          </tr>
+            <tr>
+              <th>Feature</th>
+              <th>What to Look For</th>
+              <th>Why It Matters</th>
+            </tr>
           </thead>
           <tbody>
-          <tr>
-            <td>Something you know</td>
-            <td>PIN, password, passphrase.</td>
-          </tr>
-          <tr>
-            <td>Something you have</td>
-            <td>Phone as secure device, hardware token, card itself.</td>
-          </tr>
-          <tr>
-            <td>Something you are</td>
-            <td>Fingerprint, face ID, voice or behaviour.</td>
-          </tr>
+            <tr>
+              <td>Onboarding Journey</td>
+              <td>Clear steps, supported ID types and estimated approval times</td>
+              <td>Determines how quickly and reliably legitimate customers can get a card.</td>
+            </tr>
+            <tr>
+              <td>Authentication Methods</td>
+              <td>Support for biometrics, app-based approvals and strong 3-D Secure</td>
+              <td>Impacts both daily convenience and resilience against account takeover.</td>
+            </tr>
+            <tr>
+              <td>Device &amp; Session Intelligence</td>
+              <td>Recognition of trusted devices, locations and behaviour patterns</td>
+              <td>Helps reduce false declines while still detecting risky activity.</td>
+            </tr>
+            <tr>
+              <td>Data Governance</td>
+              <td>Privacy notices, retention policies and user controls</td>
+              <td>Shows how seriously the issuer treats your personal and biometric data.</td>
+            </tr>
+            <tr>
+              <td>Regulatory Alignment</td>
+              <td>Explicit reference to KYC, AML and SCA requirements</td>
+              <td>Indicates whether digital ID is built to meet current and future rules.</td>
+            </tr>
           </tbody>
         </table>
       </div>
       <p class="small">
-        Digital ID ties these factors together into a consistent profile used by the issuer
-        to approve logins, payments and sensitive actions.
+        For a wider look at how identity, security and card features fit together, visit
+        <a href="https://choose.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          Choose.Creditcard
+        </a>.
       </p>
-    </section>
-
-    <!-- Devices & binding -->
-    <section class="section">
-      <h2>Device binding &amp; trusted environments</h2>
-      <p class="small">
-        Modern card programs strongly link your identity to your devices:
-      </p>
-      <ul class="list">
-        <li>Registration of primary phone and sometimes secondary devices</li>
-        <li>Secure elements or trusted execution environments on-device</li>
-        <li>Browser and device fingerprinting for risk scoring</li>
-        <li>Push-based approvals instead of SMS codes</li>
-        <li>Easy revocation when a device is lost or sold</li>
-      </ul>
-    </section>
-
-    <!-- Why digital ID matters -->
-    <section class="section">
-      <h2>Why digital ID matters for cardholders</h2>
-      <ul class="list">
-        <li>Lower fraud and account takeover risk</li>
-        <li>Faster approvals and smoother onboarding</li>
-        <li>Less friction for low-risk payments</li>
-        <li>Ability to unlock higher limits and more features</li>
-        <li>Compliance with PSD2, AML and local regulations</li>
-      </ul>
     </section>
 
     <!-- Cluster links -->
     <section class="section">
-      <h2>Identity &amp; access cluster</h2>
-      <p class="small">Explore related identity-focused domains from The CreditCard Collection:</p>
+      <h2>Explore Related Payment Technologies</h2>
       <div class="cluster-grid">
-        <a class="cluster-card"
-           href="https://access.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=access">
-          <h3>Access.creditcard</h3>
-          <p class="small">Cardholder access, activation and authentication flows.</p>
+        <a class="cluster-card" href="https://bitcoinpay.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=cluster_bitcoinpay">
+          <h3>BitcoinPay.Creditcard</h3>
+          <p>Bitcoin card payments and settlement patterns.</p>
         </a>
-        <a class="cluster-card"
-           href="https://verify.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=verify">
-          <h3>Verify.creditcard</h3>
-          <p class="small">Verification, trust checks and additional proof.</p>
+        <a class="cluster-card" href="https://btcpay.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=cluster_btcpay">
+          <h3>BTCPay.Creditcard</h3>
+          <p>Merchant-side BTC processing and gateways.</p>
         </a>
-        <a class="cluster-card"
-           href="https://intelligence.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=intelligence">
-          <h3>Intelligence.creditcard</h3>
-          <p class="small">Risk &amp; decision engines using identity signals.</p>
+        <a class="cluster-card" href="https://tokens.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=cluster_tokens">
+          <h3>Tokens.Creditcard</h3>
+          <p>Tokenized rewards, governance tokens and incentives.</p>
+        </a>
+        <a class="cluster-card" href="https://defipay.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=cluster_defipay">
+          <h3>DefiPay.Creditcard</h3>
+          <p>DeFi-linked card products and yield routing.</p>
+        </a>
+        <a class="cluster-card" href="https://virtualpay.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
+          <h3>VirtualPay.Creditcard</h3>
+          <p>Virtual cards and wallet-based payment flows.</p>
         </a>
       </div>
     </section>
 
-    <!-- CTA bottom -->
+    <!-- Collection section -->
     <section class="section">
-      <h2>Looking for a modern, digital-first card?</h2>
+      <h2>Part of The CreditCard Collection</h2>
       <p class="small">
-        DigitalID.creditcard explains identity and authentication.<br />
-        To compare real cards and features:
+        DigitalID.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused microsites operated by ronarn AS. Each site explains a specific part of card infrastructure or user experience, then connects you to independent comparison tools.
       </p>
-      <a class="cta"
-         href="https://choose.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=digitalid_bottom">
-        Compare Cards on Choose.Creditcard
-      </a>
+      <p class="small">
+        This page focuses on digital identity, verification and authentication in the credit card ecosystem. It does not issue cards or provide personal recommendations; instead, it summarises how processes are typically described in issuer documentation and regulatory guidance.
+      </p>
+      <p class="small">
+        All content is informational only and does not constitute financial, legal or compliance advice. For concrete decisions, always consult official terms and consider seeking independent professional guidance.
+      </p>
+
+      <!-- Technology hub snippet -->
+      <div class="hub-link">
+        <a href="https://choose.creditcard/technology/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
+           class="text-sm text-slate-600 hover:text-slate-900">
+          Learn more at the Technology hub
+        </a>
+      </div>
     </section>
 
+    <!-- Bottom CTA -->
+    <section class="section">
+      <h2>Ready to Go Deeper Into Card Technology?</h2>
+      <p class="small">
+        Use DigitalID.Creditcard to understand how digital identity underpins onboarding and payments — then continue to the main hub to explore how security, rewards and card features work together across different products.
+      </p>
+      <a class="cta" href="https://choose.creditcard/?utm_source=digitalid.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Go to Choose.Creditcard
+      </a>
+    </section>
   </main>
 
-  <!-- MINI FOOTER -->
   <footer class="mini-footer">
-    <p class="mini-footer-main">
-      © 2025 The CreditCard Collection — ronarn AS
-    </p>
+    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
     <p class="mini-footer-contact">
       Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
     </p>
